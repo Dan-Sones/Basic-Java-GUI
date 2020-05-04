@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class GUI implements ActionListener {
-
+    //Set Some Stuff up
     int count = 0;
     private JLabel label;
     private JFrame frame;
@@ -37,14 +37,15 @@ public class GUI implements ActionListener {
         frame.setVisible(true);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         new GUI();
-
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        //Increment the count by one
         count++;
+        //Set the text of the Jlabel
         label.setText("Number of clicks: " + count);
 
     }
